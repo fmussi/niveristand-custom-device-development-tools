@@ -1,5 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
+	<Property Name="NI.LV.All.SaveVersion" Type="Str">20.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -16,16 +17,18 @@
 		<Item Name="Menus" Type="Folder">
 			<Item Name="functions_ni_lib_VeriStand_Custom_Device_Import_and_Export_Tool.mnu" Type="Document" URL="../Menus/functions_ni_lib_VeriStand_Custom_Device_Import_and_Export_Tool.mnu"/>
 		</Item>
+		<Item Name="_test" Type="Folder"/>
 		<Item Name="ImportExport.lvlib" Type="Library" URL="../ImportExport.lvlib"/>
 		<Item Name="Pre-Import Action.vit" Type="VI" URL="../Pre-Import Action.vit"/>
 		<Item Name="Common Post-Build Action.vi" Type="VI" URL="../../../shared/Common Post-Build Action.vi"/>
+		<Item Name="TestFileInterface.vi" Type="VI" URL="../../Test/TestFileInterface.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Advanced System Definition.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Advanced SysDef API/SysDef API/Advanced System Definition.lvlib"/>
+				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi">
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
-				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi">
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
@@ -38,6 +41,10 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 			</Item>
+			<Item Name="Copy Built Files.vi" Type="VI" URL="../../../shared/Copy Built Files.vi"/>
+			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -47,10 +54,6 @@
 			<Item Name="NationalInstruments.VeriStand.SystemDefinitionAPI" Type="Document" URL="NationalInstruments.VeriStand.SystemDefinitionAPI">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="Copy Built Files.vi" Type="VI" URL="../../../shared/Copy Built Files.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Move Source" Type="Source Distribution">
@@ -75,7 +78,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Common Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{DA8C5649-7AEB-4A61-A35E-80D6306FE36B}</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../Built</Property>
