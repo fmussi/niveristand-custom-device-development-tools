@@ -4,12 +4,10 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="Section" Type="Folder">
-		<Item Name="Section File Interface.lvclass" Type="LVClass" URL="../Section File Interface Class/Section File Interface.lvclass"/>
-	</Item>
 	<Item Name="File Interface.lvclass" Type="LVClass" URL="../File Interface Class/File Interface.lvclass"/>
 	<Item Name="Export Custom Device Configuration.vi" Type="VI" URL="../Export Custom Device Configuration.vi"/>
 	<Item Name="Import Custom Device Configuration.vi" Type="VI" URL="../Import Custom Device Configuration.vi"/>
+	<Item Name="Import Custom Device Section Configuration.vi" Type="VI" URL="../Import Custom Device Section Configuration.vi"/>
 	<Item Name="Sysdef.SimpleExport.vi" Type="VI" URL="../subVIs/Sysdef.SimpleExport.vi"/>
 	<Item Name="Sysdef.SimpleImport.vi" Type="VI" URL="../subVIs/Sysdef.SimpleImport.vi"/>
 	<Item Name="Sysdef.SimpleExport(subSection).vi" Type="VI" URL="../subVIs/Sysdef.SimpleExport(subSection).vi"/>
